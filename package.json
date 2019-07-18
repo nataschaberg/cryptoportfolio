@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "start": "react-native start",
-    "test": "jest",
+    "android:dev":"react-native run-android",
+    "ios:dev":"react-native run-ios",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
     "lint": "eslint ."
   },
   "dependencies": {
