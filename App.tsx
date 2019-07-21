@@ -10,13 +10,14 @@
 
 import React, { Fragment } from 'react'
 import { StyleSheet, View, Text } from 'react-native'
+import { Overview } from './src/Overview'
 
 const App = () => {
   return (
     <Fragment>
       <View style={styles.parentContainer}>
         <View style={styles.innerContainer}>
-          <Text>Initialized</Text>
+          <Overview />
         </View>
       </View>
     </Fragment>
@@ -31,6 +32,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
   },
   innerContainer: {
+    marginVertical: '2%',
+    width: '100%',
     backgroundColor: 'yellow',
   },
 })

@@ -32,9 +32,9 @@ export class Overview extends React.Component<Props, State> {
     const { id, stats } = card.item
     return (
       <View style={styles.cardContainer}>
-        <Text>Product: {id} </Text>
+        <Text style={styles.productTitle}>Product: {id} </Text>
         {!Object.keys(stats).length ? (
-          <Text>Loading ...</Text>
+          <Text style={styles.loading}>Loading ...</Text>
         ) : (
           <CardDetails stats={stats} />
         )}
@@ -59,7 +59,6 @@ export class Overview extends React.Component<Props, State> {
         ) : (
           this.renderBody()
         )}
-        <Text>Hell my wolrd</Text>
       </Fragment>
     )
   }
@@ -70,5 +69,19 @@ const styles = StyleSheet.create({
     marginHorizontal: '5%',
     marginVertical: '2%',
     backgroundColor: 'white',
+    borderRadius: 8,
+    elevation: 2,
+    shadowOffset: { width: 3, height: 3 },
+    shadowColor: 'black',
+    shadowOpacity: 0.3,
+  },
+  productTitle: {
+    padding: '2%',
+    marginLeft: '2%',
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+  loading: {
+    padding: '5%',
   },
 })
