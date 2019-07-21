@@ -8,12 +8,8 @@
  * @format
  */
 
-import React, {Fragment} from 'react';
-import {
-  StyleSheet,
-  View,
-  Text,
-} from 'react-native';
+import React, { Fragment } from 'react'
+import { StyleSheet, View, Text } from 'react-native'
 
 const App = () => {
   return (
@@ -24,19 +20,19 @@ const App = () => {
         </View>
       </View>
     </Fragment>
-  );
-};
+  )
+}
 
 const styles = StyleSheet.create({
   parentContainer: {
     height: '100%',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'white'
+    backgroundColor: 'white',
   },
   innerContainer: {
-    backgroundColor: 'yellow' 
-  }
-});
+    backgroundColor: 'yellow',
+  },
+})
 
-export default App;
+export default App
