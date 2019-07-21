@@ -45,7 +45,7 @@ export class Overview extends React.Component<Props, State> {
   renderBody = () => {
     const { products } = this.state
     return !products.length ? (
-      <Text>Loading ... </Text>
+      <Text testID={'initialLoading'}>Loading ... </Text>
     ) : (
       <FlatList data={products} renderItem={this.renderCard} />
     )

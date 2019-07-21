@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Component Should render correclty 1`] = `
+<React.Fragment>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "white",
+        "height": "100%",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "yellow",
+          "marginVertical": "2%",
+          "width": "100%",
+        }
+      }
+    >
+      <Overview />
+    </View>
+  </View>
+</React.Fragment>
+`;
